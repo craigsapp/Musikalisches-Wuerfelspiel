@@ -10,13 +10,14 @@
 <h1> Musikalisches Würfelspiel </h1>
 
 <p>
-Below is a musical dice game attributed to Mozart (K<sup>6</sup>&nbsp;516f).
-Click on measure numbers in the following grid to construct
-a score.  To play the game, roll two dice at a time to select a
-specific row in each column of the grid based on the sum of the two
-dice.  Do this sixteen times to generate a randomized score.  If you
-are lazy, type the letter&nbsp;"<span class="command">r</span>" to generate
-a realization, or "<span class="command">?</span>" to list other commands.
+Below is a musical dice game attributed to Mozart
+(K<sup>6</sup>&nbsp;516f).  Click on measure numbers in the following
+grid to construct a score.  To play the game, roll two dice at a
+time to select a specific row in each column of the grid based on
+the sum of the two dice.  Do this sixteen times to generate a
+randomized score.  If you are lazy, type the letter&nbsp;"<span
+class="command">r</span>" to generate a realization, or "<span
+class="command">?</span>" to list other commands.
 </p>
 
 <div id="command-list">
@@ -34,7 +35,7 @@ a realization, or "<span class="command">?</span>" to list other commands.
 <li> <span class="command">shift-&rarr;</span> &mdash; Go to measure after last clicked measure.</li>
 </ul>
 <div id="source">
-Scans of two early editions of this game are available on <a target="imslp" href="https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)">IMSLP</a>.
+Scans of two early editions of this game are available on <a target="imslp" href="https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)">IMSLP</a>.  <a target="humdrum" href="https://raw.githubusercontent.com/craigsapp/Musikalisches-Wuerfelspiel/main/mozart-k516f.krn">Humdrum digital score</a> used on this webpage.
 </div>
 </div>
 
@@ -100,7 +101,8 @@ function displayHumdrumFilteredData(humdrumData, hid, hnpdatabase) {
 
 <script>
 	var HnpOptions = {
-		uri: "humdrum://dice/mozart/k516f.krn",
+		// uri: "humdrum://dice/mozart/k516f.krn",
+		url: "https://raw.githubusercontent.com/craigsapp/Musikalisches-Wuerfelspiel/master/mozart-k516f.krn",
 		source: "dice",
 		autoResize: true,
 		scale: 50,
