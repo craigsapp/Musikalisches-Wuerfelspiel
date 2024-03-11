@@ -102,7 +102,7 @@ function displayHumdrumFilteredData(humdrumData, hid, hnpdatabase) {
 <script>
 	var HnpOptions = {
 		// uri: "humdrum://dice/mozart/k516f.krn",
-		url: "https://raw.githubusercontent.com/craigsapp/Musikalisches-Wuerfelspiel/master/mozart-k516f.krn",
+		url: "https://raw.githubusercontent.com/craigsapp/Musikalisches-Wuerfelspiel/main/mozart-kanhc30-01.krn",
 		source: "dice",
 		autoResize: true,
 		scale: 50,
@@ -573,7 +573,8 @@ function prepareFilter(measures, grid) {
 	}
 	var elink = document.querySelector("#vhv-link");
 	if (elink) {
-		var url = "https://verovio.humdrum.org/?file=dice/mozart/k516f.krn";
+		// var url = "https://verovio.humdrum.org/?file=dice/mozart/k516f.krn";
+		var url = "https://verovio.humdrum.org/?file=https://raw.githubusercontent.com/craigsapp/Musikalisches-Wuerfelspiel/main/mozart-kanhc30-01.krn";
 		if (filter) {
 			url += "&k=ey&filter=" + encodeURIComponent(filter);
 		} else {
